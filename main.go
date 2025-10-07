@@ -5,6 +5,7 @@ import (
 	"net"
 	"os"
 
+	"github.com/KaganAsl/go-traceroute/capture"
 	"golang.org/x/net/ipv4"
 )
 
@@ -33,7 +34,7 @@ func main() {
 	fmt.Println("UDP connection opened.")
 	defer conn.Close()
 
-	icmpConn, err := net.ListenPacket("ip:icmp", "0.0.0.0")
+	icmpConn, err := capture.OpenICMPCapture()
 	if err != nil {
 		panic(err)
 	}
