@@ -6,4 +6,4 @@ A simple traceroute implementation in Go for learning and experimentation.
 
 ### Need Help :)
 
-If you want to help, check out [`TODO.md`](TODO.md) for ideas and tasks.
+If you want to help, check out [`todo.md`](todo.md) for ideas and tasks.
